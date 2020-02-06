@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="./todo-list.js"></script>
+        <link href="./styles.css" rel="stylesheet" type="text/css" /> 
+    <head/>
+
+    <body>
+        <h1>a</h1>
+        <div id="todo-table">
+            <form>
+                <label for="new-todo"></label>
+                <input type="text" name="new-todo" placeholder="new todo" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <ul>
+            <% for(var i = 0; i < todos.length; i++){ %>
+                <li><%= todos[i].item %> </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
+
+
